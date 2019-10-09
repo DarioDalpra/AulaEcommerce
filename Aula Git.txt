@@ -1,0 +1,30 @@
+Configurações iniciais
+
+
+1- para qualquer comando a ser realizado, terá que inserir o termo git
+	git config --global user.name "DarioDalpra"
+	git config --global user.email "dariodalpra@gmail.com"
+2- Criar um repositorio no github.
+3- após, criar um repositório local( ir até a pasta do projeto)
+	git init
+
+4- Para verificar o status do repositório
+	git status
+
+5- Adicionar arquivos para monitoramento do GIT
+	git add *  (o * irá monitorar todos arquivos presente na pasta/ poderá ser monitorado apenas um arquivo, é só inserir o nome do arquivo.
+
+6- Criar um commit no repositorio
+	git commit -m "Descrição do commit"
+
+7- Configurar a o destino do repositório
+	git remote add origin https://github.com/DarioDalpra/AulaEcommerce.git
+	
+8- Enviar os dados para o repositório remoto.
+	git push -u origin master
+
+9- Caso seja necessário, remover credenciais.
+	Buscador do Windows: credenciais
+	Gerenciador de credenciais.
+	Identificar a credencial do github e remover.
+
