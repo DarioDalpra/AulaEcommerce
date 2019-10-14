@@ -28,3 +28,11 @@ Configurações iniciais
 	Gerenciador de credenciais.
 	Identificar a credencial do github e remover.
 
+10- Para clonar o repositório
+	git clone https://github.com/DarioDalpra/AulaEcommerce.git (nome do projeto de terceiros)
+
+11- para salvar no repositório
+	git add *
+	git commit -m "Descrição do commit"
+
+12- Para alterar as configurações de permissões
