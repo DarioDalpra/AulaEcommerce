@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EcommerceEcoville.DAL;
-using EcommerceEcoville.Models;
+using Ecommerce.DAL;
+using Ecommerce.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace EcommerceEcoville
+namespace Ecommerce
 {
     public class Startup
     {
@@ -62,7 +62,7 @@ namespace EcommerceEcoville
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Produto}/{action=Cadastrar}/{id?}");
+                    template: "{controller=Produto}/{action=Index}/{id?}");
             });
         }
     }

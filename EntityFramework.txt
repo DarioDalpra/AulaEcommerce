@@ -10,14 +10,17 @@
 	- Criar o construtor
 	- Criar o DbSet de cada classe de modelo
 
-4 - Configurar o serviço do banco de dados 
+4 - Configurar o serviço/injeção de dependencias do banco de dados 
 na classe statup.cs
 
 5 - Criar a string de conexão no arquivo 
 appsettings.json
 
+6- Não é necessário o comando Enable-Miragtions
+	
+
 6 - Adicionar a migração
-	- Add-Migration NomeMigracao
+	- Add-Migration NomeMigracao; Update-Database -verbose
 
 7 - Atualizar o banco
 	- Update-Database -verbose

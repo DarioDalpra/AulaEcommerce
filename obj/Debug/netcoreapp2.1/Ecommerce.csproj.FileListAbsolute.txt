@@ -23,3 +23,8 @@ D:\ADS - UP\08 - DESENVOLVIMENTO DE SISTEMAS MICROSOFT\Projeto\Ecommerce\obj\Deb
 D:\ADS - UP\08 - DESENVOLVIMENTO DE SISTEMAS MICROSOFT\Projeto\Ecommerce\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 D:\ADS - UP\08 - DESENVOLVIMENTO DE SISTEMAS MICROSOFT\Projeto\Ecommerce\obj\Debug\netcoreapp2.1\Ecommerce.RazorTargetAssemblyInfo.cache
 D:\ADS - UP\08 - DESENVOLVIMENTO DE SISTEMAS MICROSOFT\Projeto\Ecommerce\obj\Debug\netcoreapp2.1\Ecommerce.RazorTargetAssemblyInfo.cs
+D:\ADS - UP\08 - DESENVOLVIMENTO DE SISTEMAS MICROSOFT\Projeto\Ecommerce\obj\Debug\netcoreapp2.1\Razor\Views\Produto\Cadastrar.g.cshtml.cs
+D:\ADS - UP\08 - DESENVOLVIMENTO DE SISTEMAS MICROSOFT\Projeto\Ecommerce\obj\Debug\netcoreapp2.1\Ecommerce.dll
+D:\ADS - UP\08 - DESENVOLVIMENTO DE SISTEMAS MICROSOFT\Projeto\Ecommerce\obj\Debug\netcoreapp2.1\Ecommerce.pdb
+D:\ADS - UP\08 - DESENVOLVIMENTO DE SISTEMAS MICROSOFT\Projeto\Ecommerce\bin\Debug\netcoreapp2.1\Ecommerce.pdb
+D:\ADS - UP\08 - DESENVOLVIMENTO DE SISTEMAS MICROSOFT\Projeto\Ecommerce\obj\Debug\netcoreapp2.1\Razor\Views\Produto\Index.g.cshtml.cs

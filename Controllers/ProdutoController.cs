@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using EcommerceEcoville.DAL;
-using EcommerceEcoville.Models;
+﻿using Ecommerce.DAL;
+using Ecommerce.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
-namespace EcommerceEcoville.Controllers
+namespace Ecommerce.Controllers
 {
     public class ProdutoController : Controller
     {
@@ -20,6 +17,8 @@ namespace EcommerceEcoville.Controllers
         //de actions
         public IActionResult Index()
         {
+            ViewBag.Produtos = _produtoDAO.Listar();
+            ViewBag.DataHora = DateTime.Now;
             return View();
         }
 
@@ -30,7 +29,7 @@ namespace EcommerceEcoville.Controllers
 
         [HttpPost]
         public IActionResult Cadastrar(string txtNome,
-            string txtDescricao, string txtPreco, 
+            string txtDescricao, string txtPreco,
             string txtQuantidade)
         {
             Produto p = new Produto
@@ -41,7 +40,22 @@ namespace EcommerceEcoville.Controllers
                 Quantidade = Convert.ToInt32(txtQuantidade)
             };
             _produtoDAO.Cadastrar(p);
-            return View();
+            return RedirectToAction("Index");
         }
+
+        public IActionResult Remover(int? id)
+        {
+            //remover o produto.
+            //buscar o produto pelo id
+            //remover o produto com base no objeto.
+            if(id != null)
+            {
+
+            }
+
+            return RedirectToAction("Index");
+        }
+
+
     }
 }

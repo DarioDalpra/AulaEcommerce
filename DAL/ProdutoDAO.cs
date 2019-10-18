@@ -1,10 +1,11 @@
-﻿using EcommerceEcoville.Models;
+﻿using Ecommerce.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EcommerceEcoville.DAL
+namespace Ecommerce.DAL
 {
     public class ProdutoDAO
     {
@@ -19,5 +20,12 @@ namespace EcommerceEcoville.DAL
             _context.Produtos.Add(p);
             _context.SaveChanges();
         }
+
+        public List<Produto> Listar()
+        {
+            return _context.Produtos.ToList();
+        }
+
+
     }
 }
