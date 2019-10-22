@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ecommerce.Models
+namespace EcommerceEcoville.Models
 {
     public class Context : DbContext
     {

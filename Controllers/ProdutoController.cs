@@ -1,9 +1,12 @@
-﻿using Ecommerce.DAL;
-using Ecommerce.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using EcommerceEcoville.DAL;
+using EcommerceEcoville.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
 
-namespace Ecommerce.Controllers
+namespace EcommerceEcoville.Controllers
 {
     public class ProdutoController : Controller
     {
@@ -29,7 +32,7 @@ namespace Ecommerce.Controllers
 
         [HttpPost]
         public IActionResult Cadastrar(string txtNome,
-            string txtDescricao, string txtPreco,
+            string txtDescricao, string txtPreco, 
             string txtQuantidade)
         {
             Produto p = new Produto
@@ -45,17 +48,35 @@ namespace Ecommerce.Controllers
 
         public IActionResult Remover(int? id)
         {
-            //remover o produto.
-            //buscar o produto pelo id
-            //remover o produto com base no objeto.
-            if(id != null)
+            if (id != null)
             {
-
+                _produtoDAO.Remover(id);
             }
-
+            else
+            {
+                //Redirecionar para uma página de erro
+            }
             return RedirectToAction("Index");
         }
-
-
+        public IActionResult Alterar(int? id)
+        {
+            ViewBag.Produto = _produtoDAO.BuscarProdutoPorId(id);
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Alterar(string txtNome,
+            string txtDescricao, string txtPreco,
+            string txtQuantidade, string txtId,
+            string hdnId)
+        {
+            Produto p = _produtoDAO.BuscarProdutoPorId
+                (Convert.ToInt32(hdnId));
+            p.Nome = txtNome;
+            p.Descricao = txtDescricao;
+            p.Preco = Convert.ToDouble(txtPreco);
+            p.Quantidade = Convert.ToInt32(txtQuantidade);
+            _produtoDAO.Alterar(p);
+            return RedirectToAction("Index");
+        }
     }
 }

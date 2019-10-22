@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Ecommerce.Migrations
+namespace EcommerceEcoville.Migrations
 {
     public partial class CriarBanco : Migration
     {
